@@ -12,7 +12,7 @@ app.use(bodyparser.urlencoded({limit:'50mb', extended: true}));
 
 app.use(express.static("assets"));
 
-mongoose.connect("mongodb+srv://Prajakta:<password>@cluster0.pnoiv.mongodb.net/e-commerce");
+mongoose.connect("mongodb+srv://Prajakta:praju2626@cluster0.pnoiv.mongodb.net/e-commerce");
 const db = mongoose.connection;
 db.on("error", error => console.log(error));
 db.on("open", () => console.log("Connection Established...."));
